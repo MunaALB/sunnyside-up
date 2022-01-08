@@ -1,0 +1,95 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1.5rem 3rem;
+        display: inline-block;
+        transition: all .2s;
+        border-radius: 10rem;
+        font-family: $font-family-Fraunces;
+
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 .5rem 2rem rgba($dark-grayish-blue, .2);
+
+        &::after {
+            transform: scaleX(1.5), scaleY(1.2);
+        }
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+
+    &--white {
+        background-color: $off-white;
+        color: $black;
+
+        &:active {
+            background-color: rgba($white, .3);
+            color: $white;
+        }
+    }
+    &--yellow{
+        background-color:$yellow;
+        color: $black;
+
+        &:active {
+            background-color: rgba($yellow, .3);
+            color: $black;
+        }
+    }
+}
+
+.btn-text {
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    font-family: $font-family-Fraunces;
+    color: $black;
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 0 1rem;
+    transition: all 1s;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        position:absolute;
+        width: 12rem;
+        z-index: -5;
+        border-radius: 10rem;
+        margin-top: 1.5rem;
+
+        height: 1rem;
+    }
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+    }
+    &--yellow {
+        &::before {
+            background-color: $yellow;
+            opacity: .3;
+            right: -1rem;
+        }
+
+        
+    }
+
+    &--red {
+        &::before {
+            background-color: $soft-red;
+            left: -1rem;
+            opacity: .3;
+        }
+    }
+}

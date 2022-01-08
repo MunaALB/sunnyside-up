@@ -1,0 +1,24 @@
+$dark-blue: hsl(212, 27%, 19%);
+$dark-grayish-blue: hsl(213, 9%, 39%);
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+$off-white:#faf1f1d5;
+$black: hsla(0, 0%, 0%, 0.795);
+
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%); 
+$dark-cyan-1 : hsl(167, 40%, 24%);
+$dark-blue: hsl(198, 62%, 26%);
+$dark-cyan-2: hsl(168, 34%, 41%);
+
+$font-family-Barlow: 'Barlow';
+$font-family-Fraunces: 'Fraunces';
+
+$grid-width: 1440px;
+@media screen and (max-width: 375px){
+    $grid-width: 375px;
+}
+$gutter-vertical: 8rem;
+$gutter-horizontal:6rem;
+$nav-padding-right:5rem;

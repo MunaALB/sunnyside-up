@@ -1,0 +1,31 @@
+.testomonial{
+    padding: 0 1.9rem;
+    &__shape{
+        margin-bottom:8rem;
+        img{
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%; 
+        }
+    }
+    &__text{
+       .name{
+           font-family: $font-family-Fraunces;
+           font-weight: 900;
+           color: $black;
+           margin-bottom: 1rem;
+       }
+       span{
+           color: $grayish-blue;
+           font-size: 1.5rem;
+       }
+    }
+}
+@media screen and (max-width: 992px) {
+    .testomonial{
+      margin-bottom: 2rem;
+        &__shape{
+            margin-bottom:2rem;
+        }
+    }
+}

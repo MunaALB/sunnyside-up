@@ -1,0 +1,104 @@
+.block {
+    height:50rem;
+    @media screen and (max-width: 375px){
+        height: 31rem;
+    }
+    &__picture {
+        width: 100%;
+
+        &--1 {
+           
+            background-image: url('../images/image-transform.jpg');
+            background-size:contain;
+            @media screen and (max-width: 375px){
+                background-image: url('../images/mobile/image-transform.jpg');
+            }
+        }
+
+        &--2 {
+            background-image: url('../images/image-stand-out.jpg');
+            background-size: cover;
+            @media screen and (max-width: 375px){
+                background-image: url('../images/mobile/image-stand-out.jpg');
+            }
+        }
+    }
+
+    &__text {
+        padding: 15rem 10rem;
+    }
+
+    &__services {
+        text-align: center;
+        padding: 40rem 18rem 16rem;
+        font-size: 1.6rem;
+        
+        &--graphic{
+            color: $dark-cyan-1;
+            background-image: url('../images/image-graphic-design.jpg');
+            background-size: cover;
+           
+        }
+        &--photography{
+            color: $dark-blue;
+            background-image: url('../images/image-photography.jpg');
+            background-size: cover;
+            
+        }
+    }
+    &_gallary{
+        width: 100%;
+        &--cone{
+            background-image: url('../images/image-gallery-cone.jpg');
+            background-size: cover;
+            @media screen and (max-width: 375px){
+                background-image: url('../images/mobile/image-gallery-cone.jpg');
+            }
+        }
+        &--milkbottles{
+            background-image: url('../images/image-gallery-milkbottles.jpg');
+            background-size: cover;
+            @media screen and (max-width: 375px){
+                background-image: url('../images/mobile/image-gallery-milkbottles.jpg');
+            }
+        }
+        &--orange{
+            background-image: url('../images/image-gallery-orange.jpg');
+            background-size: cover;
+            @media screen and (max-width: 375px){
+                background-image: url('../images/mobile/image-gallery-orange.jpg');
+            }
+        }
+        &--sugarcubes{
+            background-image: url('../images/image-gallery-sugarcubes.jpg');
+            background-size: cover;
+            @media screen and (max-width: 375px){
+                background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
+            }
+        } 
+    }
+}
+@media screen and (max-width: 450px){
+    .block{
+        height: 30rem;
+        &__text{
+            padding: 4rem 2rem;
+        }
+        &__services{
+            padding: 19rem 3rem 2rem;
+            font-size: 1rem;
+        }
+    }
+}
+@media screen and (max-width: 992px) and (min-width:460px){
+    .block{
+        height: 30rem;
+        &__text{
+            padding: 4rem 2rem;
+        }
+        &__services{
+            padding: 19rem 3rem 2rem;
+            font-size: 1rem;
+        }
+    }
+}

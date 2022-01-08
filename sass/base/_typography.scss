@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    color: $dark-grayish-blue;
+    
+
+}
+
+.heading-primary {
+    font-size: 4.7rem;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    font-family: $font-family-Fraunces;
+    backface-visibility: hidden;
+    margin-bottom: 4rem;
+    @media screen and (max-width: 375px){
+        font-size: 3.7rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.7rem;
+    letter-spacing: .02rem;
+    font-family: $font-family-Fraunces;
+    color:$black;
+    font-weight: 900;
+    @media screen and (max-width: 375px){
+        font-size: 2.7rem;
+    }
+}
+.heading-tertiary{
+    font-size: 2.7rem;
+    letter-spacing: .02rem;
+    font-family: $font-family-Fraunces;
+    font-weight: 900;
+    @media screen and (max-width: 375px){
+        font-size: 1.7rem;
+    }
+
+}
+.heading-section{
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-family: $font-family-Fraunces;
+    font-weight: 900;
+    font-size:1.8rem;
+    color:$grayish-blue
+}
+@media screen and (max-width:992px){
+    .heading-secondary{
+        font-size: 2.3rem;
+    }
+    .heading-tertiary{
+        font-size: 1.7rem;}
+}
